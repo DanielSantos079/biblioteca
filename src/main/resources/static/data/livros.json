@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "O Senhor dos Anéis",
+    "autor": "J.R.R. Tolkien",
+    "descricao": "Uma das maiores sagas de fantasia épica.",
+    "categoria": "Aventura",
+    "imagem": "/img/capa-o-senhor-dos-aneis.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "descricao": "Uma crítica poderosa ao totalitarismo.",
+    "categoria": "Aventura",
+    "imagem": "/img/1984.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Dom Casmurro",
+    "autor": "Machado de Assis",
+    "descricao": "Clássico brasileiro sobre amor, ciúme e memória.",
+    "categoria": "Romance",
+    "imagem": "/img/Dom-Casmurro.jpg"
+  }
+]

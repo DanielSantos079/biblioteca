@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Virtual - Livros</title>
+  <link rel="stylesheet" href="/css/livros.css">
+</head>
+<body>
+
+  <!-- ====== Cabeçalho ====== -->
+  <header>
+    <h1>📚 Biblioteca Virtual</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="livros.html" class="ativo">Livros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ====== Seção de Livros ====== -->
+  <main>
+    <section id="catalogo">
+      <h2>Catálogo de Livros</h2>
+
+      <!-- Campo de Busca -->
+      <input type="text" id="buscaLivros" placeholder="🔎 Buscar livros pelo título...">
+
+      <!-- Grid de Livros -->
+      <div class="grid-livros"></div>
+    </section>
+  </main>
+
+  <!-- ====== Modal de Detalhes do Livro ====== -->
+  <div id="modalLivro" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal()">&times;</span>
+      <div id="modalConteudo"></div>
+    </div>
+  </div>
+
+  <!-- ====== Rodapé ====== -->
+  <footer>
+    <p>&copy; 2025 Biblioteca Virtual</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="/js/livros.js"></script>
+</body>
+</html>

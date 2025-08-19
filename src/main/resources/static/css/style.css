@@ -1,0 +1,149 @@
+/* Reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap; /* quebra os links se a tela for pequena */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* Barra de pesquisa */
+#pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+    gap: 0.5rem;
+    flex-wrap: wrap; /* adapta o input e o botão */
+}
+
+#pesquisa input {
+    padding: 0.5rem;
+    width: 250px;
+    max-width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#pesquisa button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #2c3e50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pesquisa button:hover {
+    background: #f39c12;
+}
+
+/* Lista de livros */
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+.livros {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.livro {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.livro:hover {
+    transform: scale(1.05);
+}
+
+.livro img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .livros {
+        gap: 1rem;
+    }
+
+    .livro {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #pesquisa input {
+        width: 100%;
+    }
+
+    .livro {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}

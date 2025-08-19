@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <a href="cadastro.html"></a>
+    <a href="login.html"></a>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Biblioteca Virtual</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="livros.html">Livros</a></li>
+
+                <!-- Itens que aparecem somente quando NÃO logado -->
+                <li id="menuLogin"><a href="login.html">Login</a></li>
+                <li id="menuCadastro"><a href="cadastro.html">Cadastro</a></li>
+
+                <!-- Itens que aparecem somente quando logado -->
+                <li id="menuUsuario" style="display:none;"></li>
+                <li id="menuSair" style="display:none;"><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h2>Bem-vindo à nossa biblioteca virtual!</h2>
+        <p>Aqui você pode buscar e explorar livros.</p>
+
+        <!-- Barra de busca -->
+        <section id="busca">
+            <input type="text" id="campoBusca" placeholder="Digite o nome do livro...">
+            <button id="btnBusca">Pesquisar</button>
+        </section>
+
+        <!-- Lista de livros -->
+        <section id="resultados">
+            <h3>Livros disponíveis:</h3>
+            <div class="livros"></div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 - Biblioteca Virtual</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/script.js"></script>
+    <script src="/js/usuario.js"></script>
+</body>
+</html>
