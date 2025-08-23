@@ -46,7 +46,7 @@ function abrirModal(id) {
 
   conteudo.innerHTML = `
     <h2>${livro.titulo}</h2>
-    <img src="${livro.capa}" alt="${livro.titulo}">
+    <img src="${livro.imagem}" alt="${livro.titulo}">
     <p><strong>Autor:</strong> ${livro.autor}</p>
     <p>${livro.descricao}</p>
     <p><strong>Categoria:</strong> ${livro.categoria}</p>

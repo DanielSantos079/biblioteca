@@ -118,25 +118,62 @@ h2 {
 }
 
 /* ===== MODAL ===== */
+
 .modal {
-  display: none; /* só aparece via JS */
+  display: none; /* escondido por padrão */
   position: fixed;
-  z-index: 999;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
-  justify-content: center;
-  align-items: center;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 50px;
 }
 
+/* Caixa de conteúdo do modal */
 .modal-conteudo {
-  background: white;
+  background: #fff;
+  margin: auto;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
+  max-width: 600px;
   width: 90%;
-  max-width: 500px;
-  animation: abrirModal 0.3s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease;
 }
+
+/* Imagem da capa dentro do modal */
+#capaDetalhes {
+  max-width: 200px;   /* limita largura */
+  max-height: 300px;  /* limita altura */
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto; /* centralizada */
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Botão de fechar */
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fechar:hover {
+  color: #e74c3c;
+}
+
 
 @keyframes abrirModal {
   from { transform: scale(0.8); opacity: 0; }
@@ -163,17 +200,6 @@ h2 {
 
 .modal-conteudo button:hover {
   background: #357ABD;
-}
-
-.fechar {
-  float: right;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #555;
-}
-
-.fechar:hover {
-  color: black;
 }
 
 /* ===== FOOTER ===== */

@@ -34,11 +34,21 @@
 
   <!-- ====== Modal de Detalhes do Livro ====== -->
   <div id="modalLivro" class="modal">
-    <div class="modal-conteudo">
-      <span class="fechar" onclick="fecharModal()">&times;</span>
-      <div id="modalConteudo"></div>
+  <div class="modal-conteudo">
+    <span class="fechar" onclick="fecharModal()">&times;</span>
+    
+    <!-- Aqui dentro vai o conteúdo injetado via JS -->
+    <div id="modalConteudo">
+      <h2 id="tituloDetalhes"></h2>
+      <img id="capaDetalhes" src="" alt="Capa do Livro">
+      <p><strong>Autor:</strong> <span id="autorDetalhes"></span></p>
+      <p id="descricaoDetalhes"></p>
+      <p><strong>Categoria:</strong> <span id="categoriaDetalhes"></span></p>
+      <button id="btnFavorito"></button>
     </div>
   </div>
+</div>
+
 
   <!-- ====== Rodapé ====== -->
   <footer>
