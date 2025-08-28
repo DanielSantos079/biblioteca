@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     exibirLivros(livros);
 });
 
-// Escuta a digitação em tempo real
+// digitação em tempo real
 campoBusca.addEventListener("input", () => {
     const termo = campoBusca.value.toLowerCase();
     buscarLivro(termo);

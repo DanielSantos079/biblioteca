@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Aluguéis</title>
+  <link rel="stylesheet" href="/css/meus-alugueis.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Meus Aluguéis</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="meus-alugueis.html" class="ativo">Meus Aluguéis</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="alugueis">
+      <h2>Livros disponíveis para aluguel</h2>
+      <div id="listaAlugueis" class="grid-alugueis">
+        <!-- Os livros serão inseridos aqui pelo JS como cards -->
+        <!-- Exemplo de card esperado:
+        <div class="livro">
+          <h3>Título do Livro</h3>
+          <p>Autor: Fulano</p>
+          <button onclick="alugarLivro(1)">Alugar</button>
+        </div>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Biblioteca Online - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Script que conecta o front ao backend -->
+  <script src="/js/meus-alugueis.js"></script>
+</body>
+</html>

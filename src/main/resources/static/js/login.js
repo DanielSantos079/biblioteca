@@ -18,7 +18,7 @@ document.getElementById("formLogin").addEventListener("submit", function(e) {
         // Exemplo: salvar usuário logado
         localStorage.setItem("usuarioLogado", JSON.stringify(usuarioValido));
 
-        // Opcional: redirecionar para página inicial da biblioteca
+        // redirecionar para página inicial da biblioteca
         setTimeout(() => {
             window.location.href = "index.html";
         }, 1500);
